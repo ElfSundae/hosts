@@ -1,6 +1,6 @@
 # hosts
 
-- Google/Twitter/Facebook/Amazon/Dropbox/... 
+- Google/Twitter/Facebook/Amazon/Dropbox/...  
     `https://coding.net/u/ElfSundae/p/hosts/git/raw/master/hosts`
-- Apple 联通
+- Apple 联通  
     `https://coding.net/u/ElfSundae/p/hosts/git/raw/master/Apple_ChinaUnicom`
