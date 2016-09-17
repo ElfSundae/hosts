@@ -9,55 +9,55 @@ curl -o hosts https://raw.githubusercontent.com/racaljk/hosts/master/hosts
 echo ">> Updated racaljk/hosts"
 
 ### Apple
-rm -rf AppleDNS
-git clone --branch=master --single-branch --depth=1 git@github.com:gongjianhui/AppleDNS.git
+# rm -rf AppleDNS
+# git clone --branch=master --single-branch --depth=1 git@github.com:gongjianhui/AppleDNS.git
 
-if [[ -f "AppleDNS/fetch-timeout.py" ]]; then
-    cd AppleDNS
+# if [[ -f "AppleDNS/fetch-timeout.py" ]]; then
+#     cd AppleDNS
 
-    ip=$(export PYTHONIOENCODING=utf8; curl -s 'http://httpbin.org/ip' | python -c "import sys, json; print json.load(sys.stdin)['origin']")
-    echo ">> Got IP: $ip"
+#     ip=$(export PYTHONIOENCODING=utf8; curl -s 'http://httpbin.org/ip' | python -c "import sys, json; print json.load(sys.stdin)['origin']")
+#     echo ">> Got IP: $ip"
 
-    address=$(curl -s "http://freeapi.ipip.net/${ip}")
-    echo ">> Got address: $address"
+#     address=$(curl -s "http://freeapi.ipip.net/${ip}")
+#     echo ">> Got address: $address"
 
-    cell=".unknown"
-    if [[ $address == *"联通"* ]]; then
-        cell="ChinaUnicom"
-    elif [[ $address == *"电信"* ]]; then
-        cell="ChinaNet"
-    elif [[ $address == *"移动"* ]]; then
-        cell="CMCC"
-    fi
+#     cell=".unknown"
+#     if [[ $address == *"联通"* ]]; then
+#         cell="ChinaUnicom"
+#     elif [[ $address == *"电信"* ]]; then
+#         cell="ChinaNet"
+#     elif [[ $address == *"移动"* ]]; then
+#         cell="CMCC"
+#     fi
 
-    jsonFile=${cell}.json
-    outputFilename=Apple_${cell}
-    outputFile=$ROOT/$outputFilename
+#     jsonFile=${cell}.json
+#     outputFilename=Apple_${cell}
+#     outputFile=$ROOT/$outputFilename
 
-    if [[ -f "$jsonFile" ]]; then
-        echo ">> Fetching Apple DNS timeout..."
-        python fetch-timeout.py "$jsonFile" >> /dev/null 2>&1
+#     if [[ -f "$jsonFile" ]]; then
+#         echo ">> Fetching Apple DNS timeout..."
+#         python fetch-timeout.py "$jsonFile" >> /dev/null 2>&1
 
-        hostsContent=`python export-configure.py hosts`
+#         hostsContent=`python export-configure.py hosts`
 
-        if [[ -f "$outputFile" ]]; then
-            oldHostsContent=`cat "$outputFile"`
+#         if [[ -f "$outputFile" ]]; then
+#             oldHostsContent=`cat "$outputFile"`
 
-            oldContent=`echo "$oldHostsContent" | sed '/^#/ d'`
-            newContent=`echo "$hostsContent" | sed '/^#/ d'`
+#             oldContent=`echo "$oldHostsContent" | sed '/^#/ d'`
+#             newContent=`echo "$hostsContent" | sed '/^#/ d'`
 
-            if [[ "$oldContent" == "$newContent" ]]; then
-                hostsContent="$oldHostsContent"
-            fi
-        fi
+#             if [[ "$oldContent" == "$newContent" ]]; then
+#                 hostsContent="$oldHostsContent"
+#             fi
+#         fi
 
-        echo "$hostsContent" > "$outputFile"
-        echo ">> Updated $outputFilename"
-    fi
+#         echo "$hostsContent" > "$outputFile"
+#         echo ">> Updated $outputFilename"
+#     fi
 
-    cd "$ROOT"
-    rm -rf AppleDNS
-fi
+#     cd "$ROOT"
+#     rm -rf AppleDNS
+# fi
 
 cd "$ROOT"
 git status
