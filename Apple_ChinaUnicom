@@ -1,10 +1,10 @@
-# Build Date: 2016-09-17T08:11:01.604405 (UTC)
-# API-2-ChinaCache [ChinaUnicom] (Avg RTT: 30.965ms)
-218.58.209.156  itunes.apple.com
-218.58.209.156  init.itunes.apple.com
-# API-HK-Akamai-1 [HongKong0] (Avg RTT: 45.441ms)
-184.87.97.50    search.itunes.apple.com
-# API-HK-Akamai-2-AMRadio [HongKong1] (Avg RTT: 50.019ms)
+# Build Date: 2016-09-25T01:07:00.030931 (UTC)
+# API-2-ChinaCache [ChinaUnicom] (Avg RTT: 24.976ms)
+218.58.209.14   itunes.apple.com
+218.58.209.14   init.itunes.apple.com
+# API-HK-Akamai-1 [HongKong0] (Avg RTT: 42.301ms)
+23.42.189.88    search.itunes.apple.com
+# API-HK-Akamai-2-AMRadio [HongKong1] (Avg RTT: 44.876ms)
 184.87.100.246  radio.itunes.apple.com
 184.87.100.246  radio-activity.itunes.apple.com
 184.87.100.246  radio-services.itunes.apple.com

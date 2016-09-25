@@ -62,7 +62,7 @@ echo ">> Updated racaljk/hosts"
 cd "$ROOT"
 git status
 git add .
-git commit -am "Updated via sync."
+git commit -am "Updated via sync"
 git push origin master
 git push coding master
 
