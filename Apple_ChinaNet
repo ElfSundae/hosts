@@ -1,0 +1,20 @@
+# Build Date: 2016-10-11T02:49:23.762340 (UTC)
+# API-1-ChinaNetCenter [ChinaNet] (Avg RTT: 12.937ms)
+115.231.31.15   se.itunes.apple.com
+115.231.31.15   su.itunes.apple.com
+115.231.31.15   upp.itunes.apple.com
+115.231.31.15   play.itunes.apple.com
+115.231.31.15   client-api.itunes.apple.com
+# API-2-ChinaCache [ChinaNet] (Avg RTT: 7.631ms)
+180.153.126.85  itunes.apple.com
+180.153.126.85  init.itunes.apple.com
+# API-HK-Akamai-1 [HongKong0] (Avg RTT: 80.241ms)
+184.87.97.50    search.itunes.apple.com
+# API-HK-Akamai-2-AMRadio [HongKong1] (Avg RTT: 88.247ms)
+104.89.141.101  radio.itunes.apple.com
+104.89.141.101  radio-activity.itunes.apple.com
+104.89.141.101  radio-services.itunes.apple.com
+# Apple Music Streaming [ChinaNet-ChinaCache] (Avg RTT: 9.911ms)
+183.134.42.9    aod.itunes.apple.com
+183.134.42.9    mvod.itunes.apple.com
+183.134.42.9    streamingaudio.itunes.apple.com
