@@ -1,20 +1,20 @@
-# Build Date: 2016-10-21T09:46:16.647372 (UTC)
-# API-1-ChinaNetCenter [ChinaUnicom] (Avg RTT: 22.184ms)
-60.217.23.15    se.itunes.apple.com
-60.217.23.15    su.itunes.apple.com
-60.217.23.15    upp.itunes.apple.com
-60.217.23.15    play.itunes.apple.com
-60.217.23.15    client-api.itunes.apple.com
-# API-2-ChinaCache [ChinaUnicom] (Avg RTT: 24.811ms)
-119.188.139.200 itunes.apple.com
-119.188.139.200 init.itunes.apple.com
-# API-HK-Akamai-1 [HongKong0] (Avg RTT: 42.041ms)
+# Build Date: 2016-10-25T18:10:54.286710 (UTC)
+# API-1-ChinaNetCenter [ChinaUnicom] (Avg RTT: 20.941ms)
+123.133.76.14   se.itunes.apple.com
+123.133.76.14   su.itunes.apple.com
+123.133.76.14   upp.itunes.apple.com
+123.133.76.14   play.itunes.apple.com
+123.133.76.14   client-api.itunes.apple.com
+# API-2-ChinaCache [ChinaUnicom] (Avg RTT: 24.060ms)
+27.221.54.135   itunes.apple.com
+27.221.54.135   init.itunes.apple.com
+# API-HK-Akamai-1 [HongKong0] (Avg RTT: 42.106ms)
 23.42.189.88    search.itunes.apple.com
-# API-HK-Akamai-2-AMRadio [HongKong1] (Avg RTT: 45.990ms)
-23.13.185.169   radio.itunes.apple.com
-23.13.185.169   radio-activity.itunes.apple.com
-23.13.185.169   radio-services.itunes.apple.com
-# Apple Music Streaming [ChinaUnicom-ChinaCache] (Avg RTT: 16.629ms)
+# API-HK-Akamai-2-AMRadio [HongKong1] (Avg RTT: 42.570ms)
+184.87.100.246  radio.itunes.apple.com
+184.87.100.246  radio-activity.itunes.apple.com
+184.87.100.246  radio-services.itunes.apple.com
+# Apple Music Streaming [ChinaUnicom-ChinaCache] (Avg RTT: 21.593ms)
 153.101.209.36  aod.itunes.apple.com
 153.101.209.36  mvod.itunes.apple.com
 153.101.209.36  streamingaudio.itunes.apple.com
